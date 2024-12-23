@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://127.0.0.1:5501/code/form-validation/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="http://127.0.0.1:5501/code/form-validation/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./chandan form_files/style.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form onsubmit="formsubmit()"></form>
+    <form>
+        <div class="input"></div>
+        <label for="Name">Enter Name: </label><br>
+        <input type="text " id="Name" placeholder="chandan" fdprocessedid="1ttco">
+
+        <div class="input">
+            <label for="Email">Enter Email:</label><br>
+            <input type="text" id="Email" placeholder="Email" fdprocessedid="72zyq8">
+        </div>
+
+        <div class="input">
+            <label for="pwd">Enter password:</label><br>
+            <input type="password" name="password" id="pwd" placeholder="password" fdprocessedid="5gxe6a">
+        </div>
+
+        <div>
+        <div class="input">
+                <label for="address">Enter Address:</label><br>
+                <input type="text" name="address" id="address" placeholder="address" fdprocessedid="xcf2b">
+            </div>
+
+       <div>
+        <div class="input">
+            <label for="contact">Enter contact:</label><br>
+            <input type="text" name="contact" id="contact" placeholder="contact" fdprocessedid="l31fzo">
+
+        <div class="input"></div>
+        <div class="input"></div>
+        <button type="Submit" fdprocessedid="mq2ey">Submit</button>
+        <button type="Reset" fdprocessedid="jraz2">Reset</button>
+    
+    <script src="./chandan form_files/script.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</div></div></div></form><span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
